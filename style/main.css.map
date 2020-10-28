@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,cAAc,CAAC;EACX,gBAAgB,EAAE,UAAU;EAC5B,aAAa,EAAE,MAAM;CACxB",
+    "sources": [
+        "main.scss",
+        "partials/_img-input.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
