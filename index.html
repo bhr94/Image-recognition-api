@@ -10,7 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -19,7 +22,7 @@
       <div class="nav__item home">Home</div>
       <div class="nav__item features">Features</div>
       <label class="switch">
-        <input type="checkbox" checked>
+        <input type="checkbox" checked />
         <span class="slider round"></span>
       </label>
     </nav>
@@ -33,38 +36,39 @@
 
     <!-- cards section -->
     <div class="section-cards pattern-cross-dots-xl">
-        <h1 class = "section-cards__title">
-            Features
-        </h1>
+      <h1 class="section-cards__title">Features</h1>
       <div class="cards__container">
         <div class="card card1">
-            <h1 class="card__title">Age and Gender Clasification</h1>
-            <img src="./assets/card1_img.png" alt="" class="card__img">
+          <h1 class="card__title">Age and Gender Clasification</h1>
+          <img src="./assets/card1_img.png" alt="" class="card__img" />
         </div>
         <div class="card card2">
-            <h1 class="card__title">Automatic Image Description </h1>
-            <img src="./assets/card2_img.png" alt="" class="card__img">
+          <h1 class="card__title">Automatic Image Description</h1>
+          <img src="./assets/card2_img.png" alt="" class="card__img" />
         </div>
         <div class="card card3">
-            <h1 class="card__title">Text Extraction</h1>
-            <img src="./assets/card3.png" alt="" class="card__img">
+          <h1 class="card__title">Text Extraction</h1>
+          <img src="./assets/card3.png" alt="" class="card__img" />
         </div>
       </div>
     </div>
 
     <!-- image upload section -->
-    <input type="file" name="img_file" id="" class="img_fileInput" />
-    <br />
-    <div class="container">
-      <img src="" alt="" class="img" />
-      <!-- <div class="bounding-box"></div> -->
-      <canvas
+    <section class="age-gender__section pattern-cross-dots-xl">
+        <h1 class="age-gende__section-title">This API will Define Age and Gender</h1>
+      <div class = "age-gender__container">
+        <input type="file" name="img_file" id="" class="img_fileInput" />
+        <br />
+        <div class="container">
+          <img src="" alt="" class="img" />
+          <!-- <canvas
         id="myCanvas"
         style="border: 1px solid #d3d3d3"
         class="can_vas"
-      ></canvas>
-    </div>
-
+      ></canvas> -->
+        </div>
+      </div>
+    </section>
 
     <!-- scripts -->
     <script

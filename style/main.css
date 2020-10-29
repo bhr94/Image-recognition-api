@@ -1,21 +1,39 @@
 .img_fileInput {
-  background-color: aquamarine;
   border-radius: 0.3rem;
   margin-bottom: 2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 60%;
+  padding: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .img {
-  width: 500px;
-  height: 400px;
+  height: 30rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: black;
+  border-radius: 2rem;
+  width: 40%;
+  padding: 2rem;
 }
 
 .container {
   position: relative;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5rem 0;
 }
 
 .bounding-box {
@@ -284,5 +302,41 @@ body {
 
 .card2 {
   padding-bottom: 3.3rem;
+}
+
+.age-gender__section {
+  background-color: #ff8906;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.age-gender__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 0;
+}
+
+.age-gende__section-title {
+  color: black;
+  font-size: 3.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,10 +16,13 @@ img_input.addEventListener("change", handleFiles, false);
 function handleFiles() {
   const fileList = this.files; /* now you can work with the file list */
   if (fileList.length > 0) {
+    //   const img = document.createElement("img");
+    //   img.classList.add("img");
     console.log(fileList[0].name);
     img_title = fileList[0].name;
     img.src = path1 + fileList[0].name;
     img_src = img.src;
+    container.appendChild(img);
     console.log(img.naturalWidth);
     console.log(img.naturalHeight);
   }
@@ -96,3 +99,7 @@ home.addEventListener("click", () => {
 });
 
 const card_one = document.querySelector(".card1");
+const card_one_api = document.querySelector(".age-gender__section")
+card_one.addEventListener("click", ()=>{
+    scrollTo(card_one_api);
+})

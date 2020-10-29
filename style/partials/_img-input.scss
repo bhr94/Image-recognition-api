@@ -1,20 +1,32 @@
 .img_fileInput {
-    background-color: aquamarine;
-    border-radius: 0.3rem;
-    margin-bottom:2rem;
+  // background-color: aquamarine;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.7);
+  width: 60%;
+  padding: 2rem;
+  align-self: center;
+
 }
 
-
 .img {
-    width: 500px;
-    height: 400px;
+  // width: 500px; 
+    height: 30rem;
     box-sizing: border-box;
-    background-color: black;
-
+    border-radius: 2rem;
+    width: 40%;
+    padding: 2rem;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  background-color: white;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5rem 0;
 }
