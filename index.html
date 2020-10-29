@@ -10,24 +10,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
     <!-- nav section  -->
     <nav class="nav">
-      <div class="nav__item">Home</div>
-      <div class="nav__item">Features</div>
+      <div class="nav__item home">Home</div>
+      <div class="nav__item features">Features</div>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
     </nav>
 
     <!-- hero section -->
-    <div class="pattern-dots-lg hero">
+    <div class="pattern-cross-dots-xl hero">
       <p class="hero__text animate__animated animate__bounce animate__repeat-2">
         Image Processing API
       </p>
     </div>
 
     <!-- cards section -->
-    <div class="section-cards">
+    <div class="section-cards pattern-cross-dots-xl">
+        <h1 class = "section-cards__title">
+            Features
+        </h1>
       <div class="cards__container">
         <div class="card card1">
             <h1 class="card__title">Age and Gender Clasification</h1>
@@ -35,11 +43,11 @@
         </div>
         <div class="card card2">
             <h1 class="card__title">Automatic Image Description </h1>
-            <img src="" alt="" class="card__img">
+            <img src="./assets/card2_img.png" alt="" class="card__img">
         </div>
         <div class="card card3">
-            <h1 class="card__title">helloooo</h1>
-            <img src="" alt="" class="card__img">
+            <h1 class="card__title">Text Extraction</h1>
+            <img src="./assets/card3.png" alt="" class="card__img">
         </div>
       </div>
     </div>
