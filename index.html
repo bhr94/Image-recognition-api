@@ -5,19 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
     <script src="https://cdn.cloudmersive.com/jsclient/cloudmersive-image-client.js"></script>
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <input type="file" name="img_file" id="" class = "img_fileInput">
-    <br>
-    <img src="" alt="" class ="img"/>
+    <!-- nav section  -->
+    <nav class="nav">
+      <div class="nav__item">Home</div>
+      <div class="nav__item">Features</div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="pattern-dots-lg hero">
+      <p class="hero__text animate__animated animate__bounce animate__repeat-2">
+        Image Processing API
+      </p>
+    </div>
+
+    <!-- cards section -->
+    <div class="section-cards">
+      <div class="cards__container">
+        <div class="card card1">
+            <h1 class="card__title">Age and Gender Clasification</h1>
+            <img src="./assets/card1_img.png" alt="" class="card__img">
+        </div>
+        <div class="card card2">
+            <h1 class="card__title">Automatic Image Description </h1>
+            <img src="" alt="" class="card__img">
+        </div>
+        <div class="card card3">
+            <h1 class="card__title">helloooo</h1>
+            <img src="" alt="" class="card__img">
+        </div>
+      </div>
+    </div>
+
+    <!-- image upload section -->
+    <input type="file" name="img_file" id="" class="img_fileInput" />
+    <br />
+    <div class="container">
+      <img src="" alt="" class="img" />
+      <!-- <div class="bounding-box"></div> -->
+      <canvas
+        id="myCanvas"
+        style="border: 1px solid #d3d3d3"
+        class="can_vas"
+      ></canvas>
+    </div>
 
 
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+    <!-- scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+      integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./front.js"></script>
   </body>
 </html>
