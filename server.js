@@ -33,6 +33,41 @@ app.post("/imgFaceLocation", (req,res) =>{
     
 })
 
+app.post("/imgGender", (req,res) =>{
+  const {imgLocation} = req.body;
+  var imageFile = Buffer.from(fs.readFileSync(imgLocation).buffer); // File | Image file to perform the operation on.  Common file formats such as PNG, JPEG are supported.
+  const data = apiInstance.faceDetectAge(imageFile, (error, data, response)=>{
+      if (error) {
+          res.json(error);
+        } else {
+          //   console.log('API called successfully. Returned data: ' + JSON.stringify(data));
+            res.json(data);
+         
+        }
+  });
+  
+})
+
+
+
+// Configure API key authorization: Apikey
+
+
+
+// var apiInstance = new CloudmersiveImageApiClient.RecognizeApi();
+
+// var imageFile = Buffer.from(fs.readFileSync("C:\\temp\\inputfile").buffer); // File | Image file to perform the operation on.  Common file formats such as PNG, JPEG are supported.
+
+
+// var callback = function(error, data, response) {
+//   if (error) {
+//     console.error(error);
+//   } else {
+//     console.log('API called successfully. Returned data: ' + data);
+//   }
+// };
+// apiInstance.recognizeDescribe(imageFile, callback);
+
 
 
 //"/Users/baharmutadayin/Downloads/bahar.jpg"

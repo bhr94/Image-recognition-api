@@ -13,10 +13,47 @@
     padding: 5rem;
     flex-direction: column;
     padding-top: 0;
+    align-items: center;
+    
 }
 
 .age-gende__section-title {
     color: black;
     font-size: 3.5rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.img__description {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: stretch;
+    border-radius: 2rem;
+    box-shadow: 5px 5px #888888;
+}
+
+
+// .img__description-list {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     list-style: none;
+//     align-items: stretch;
+//     justify-content: center;
+
+// }
+
+.list-item {
+    background-color: black;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+}
+
+.class-item__main {
+    background-color: black;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
 }
