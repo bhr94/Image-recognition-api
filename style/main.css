@@ -288,6 +288,10 @@ body {
           box-sizing: border-box;
 }
 
+.dark_mode {
+  background-color: #ccc;
+}
+
 .hero {
   height: 95vh;
   background-color: #ff8906;

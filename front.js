@@ -33,7 +33,7 @@ function handleFiles() {
     container.appendChild(img);
     console.log(img.naturalWidth);
     console.log(img.naturalHeight);
-  }
+  } 
   getData(path2, img_title, url_age)
     .then((result) => {
       for (let i = 0; i < result.data.PeopleIdentified; i++) {
@@ -97,9 +97,7 @@ function handleFiles3() {
   // getting gender data from the API
   getData(path2, img_title, url_description)
     .then((result) => {
-      for (let i = 0; i < result.data.PeopleIdentified; i++) {
-        print_img_description(result.data.PersonWithGender[i].GenderClass);
-      }
+        print_img_description(result.data.BestOutcome.Description);
       createBox();
       // createBox(result.data.PeopleWithAge[0].FaceLocation);
       // result.data.PeopleWithAge[0].FaceLocation, img
@@ -197,3 +195,25 @@ const card_one_api = document.querySelector(".age-gender__section");
 card_one.addEventListener("click", () => {
   scrollTo(card_one_api);
 });
+
+const card_two = document.querySelector(".card2");
+const card_two_api = document.querySelector(".gender__section");
+card_two.addEventListener("click", () =>{
+  scrollTo(card_two_api);
+});
+
+const card_three = document.querySelector(".card3");
+const card_three_api = document.querySelector(".img-description__section");
+card_three.addEventListener("click", () =>{
+  scrollTo(card_three_api);
+});
+
+const toggle_function = () =>{
+  const toggle_element = document.body;
+  toggle_element.classList.toggle("dark-mode");
+}
+
+
+// const switch_element = document.querySelector(".switch");
+// switch_element.addEventListener("click", toggle_function);
+
