@@ -36,7 +36,24 @@ app.post("/imgFaceLocation", (req,res) =>{
 app.post("/imgGender", (req,res) =>{
   const {imgLocation} = req.body;
   var imageFile = Buffer.from(fs.readFileSync(imgLocation).buffer); // File | Image file to perform the operation on.  Common file formats such as PNG, JPEG are supported.
-  const data = apiInstance.faceDetectAge(imageFile, (error, data, response)=>{
+  const data = apiInstance.faceDetectGender(imageFile, (error, data, response)=>{
+      if (error) {
+          res.json(error);
+        } else {
+          //   console.log('API called successfully. Returned data: ' + JSON.stringify(data));
+            res.json(data);
+         
+        }
+  });
+  
+})
+
+var api_instance = new CloudmersiveImageApiClient.RecognizeApi();
+
+app.post("/imgDescription", (req,res) =>{
+  const {imgLocation} = req.body;
+  var imageFile = Buffer.from(fs.readFileSync(imgLocation).buffer); // File | Image file to perform the operation on.  Common file formats such as PNG, JPEG are supported.
+  const data = api_instance.recognizeDescribe(imageFile, (error, data, response)=>{
       if (error) {
           res.json(error);
         } else {
@@ -49,13 +66,6 @@ app.post("/imgGender", (req,res) =>{
 })
 
 
-
-// Configure API key authorization: Apikey
-
-
-
-// var apiInstance = new CloudmersiveImageApiClient.RecognizeApi();
-
 // var imageFile = Buffer.from(fs.readFileSync("C:\\temp\\inputfile").buffer); // File | Image file to perform the operation on.  Common file formats such as PNG, JPEG are supported.
 
 
@@ -66,7 +76,7 @@ app.post("/imgGender", (req,res) =>{
 //     console.log('API called successfully. Returned data: ' + data);
 //   }
 // };
-// apiInstance.recognizeDescribe(imageFile, callback);
+// api_instance.recognizeDescribe(imageFile, callback);
 
 
 

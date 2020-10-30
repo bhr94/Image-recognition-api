@@ -1,0 +1,25 @@
+.img-description__section {
+  background-color: #ff8906;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.description__container {
+  display: flex;
+  padding: 5rem;
+  flex-direction: column;
+  padding-top: 0;
+  align-items: center;
+}
+
+.img__description2 {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: stretch;
+  border-radius: 2rem;
+  box-shadow: 5px 5px #888888;
+}

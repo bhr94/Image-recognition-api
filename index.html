@@ -39,15 +39,15 @@
       <h1 class="section-cards__title">Features</h1>
       <div class="cards__container">
         <div class="card card1">
-          <h1 class="card__title">Age and Gender Clasification</h1>
-          <img src="./assets/card1_img.png" alt="" class="card__img" />
-        </div>
-        <div class="card card2">
-          <h1 class="card__title">Automatic Image Description</h1>
+          <h1 class="card__title">Age Clasification</h1>
           <img src="./assets/card2_img.png" alt="" class="card__img" />
         </div>
+        <div class="card card2">
+          <h1 class="card__title"> Gender Clasification</h1>
+          <img src="./assets/card1_img.png" alt="" class="card__img" />
+        </div>
         <div class="card card3">
-          <h1 class="card__title">Text Extraction</h1>
+          <h1 class="card__title">Automatic Image Description</h1>
           <img src="./assets/card3.png" alt="" class="card__img" />
         </div>
       </div>
@@ -60,7 +60,7 @@
         <input type="file" name="img_file" id="input1" class="img_fileInput" />
         <br />
         <div class="container">
-          <img src="./assets/card1_img.png" alt="" class="img" />
+          <img src="./assets/card2_img.png" alt="" class="img" />
           <!-- <canvas
         id="myCanvas"
         style="border: 1px solid #d3d3d3"
@@ -84,15 +84,48 @@
         <input type="file" name="img_file2" id="input2" class="img_input" />
         <br />
         <div class="container2">
-          <img src="./assets/card2_img.png" alt="" class="img2" />
+          <img src="./assets/card1_img.png" alt="" class="img2" />
           <!-- <canvas
           id="myCanvas"
           style="border: 1px solid #d3d3d3"
           class="can_vas"
         ></canvas> -->
+
+          <div class="img__description" id="second_api">
+            <!-- <div class="list-item">age 25</div>
+            <div class="list-item">age 25</div>
+            <div class="list-item">age 25</div>
+            <div class="class-item__main">2</div> -->
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- image upload third api -->
+
+    <section class="img-description__section pattern-cross-dots-xl">
+      <!-- <h1 class="gender__section-title">This API will Define Gender</h1> -->
+      <div class="description__container">
+        <input type="file" name="img_file3" id="input3" class="img_input_description" />
+        <br />
+        <div class="container3">
+          <img src="./assets/card3.png" alt="" class="img3" />
+          <!-- <canvas
+            id="myCanvas"
+            style="border: 1px solid #d3d3d3"
+            class="can_vas"
+          ></canvas> -->
+
+          <div class="img__description2" id="second_api">
+            <!-- <div class="list-item">age 25</div>
+              <div class="list-item">age 25</div>
+              <div class="list-item">age 25</div>
+              <div class="class-item__main">2</div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- scripts -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
